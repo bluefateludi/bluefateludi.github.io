@@ -1,45 +1,45 @@
 /**
  * 项目页数据源（纯内容）。
- * 页面展示与筛选规则由 src/config/projectsConfig.ts 控制。
+ * 页面展示与筛选规则由 shirones/config/projectsConfig.ts 控制。
  */
 import type { ProjectItem } from "@/types/projectsConfig";
 
 export const projectsData: ProjectItem[] = [
 	{
-		key: "shirone",
-		title: "Shirone",
+		key: "slideforge",
+		title: "SlideForge",
 		summary:
-			"An Astro blog theme shaped around an M3E component system, expressive content, and resilient client navigation.",
-		category: "theme",
+			"AI 驱动的 PPT 生成器：主题/长文本/文档 → 可编辑大纲 → 并发生成 16:9 页面 → 原生可编辑 PPTX 导出，内置 20 题基准评测体系。",
+		category: "web",
 		phase: "building",
-		technologies: ["Astro", "Svelte", "TypeScript", "Tailwind CSS"],
-		icon: "material-symbols:deployed-code-outline-rounded",
-		cover: "/assets/projects/shirone.webp",
-		coverAlt: "Shirone theme homepage preview",
+		technologies: ["Python", "TypeScript"],
+		icon: "material-symbols:slideshow-rounded",
 		featured: true,
-		repository: "https://github.com/LyraVoid/Shirone",
+		repository: "https://github.com/bluefateludi/SlideForge",
 		year: "2026",
 	},
 	{
-		key: "folkpatch",
-		title: "FolkPatch",
-		summary: "A kernel-level root solution for Android, built on APatch.",
-		category: "android",
-		phase: "building",
-		technologies: ["Kotlin", "APatch", "Android"],
-		icon: "material-symbols:terminal-rounded",
-		repository: "https://github.com/LyraVoid/FolkPatch",
+		key: "toollens",
+		title: "ToolLens",
+		summary:
+			"面向「几十到上百个工具，Agent 怎么快速选对」这一工程难题的实战项目：工具检索、模型选择、执行校验与评测链路，并用工具混淆矩阵分开衡量候选召回与最终选择。",
+		category: "agent",
+		phase: "shipped",
+		technologies: ["Python"],
+		icon: "material-symbols:manage-search-rounded",
+		repository: "https://github.com/bluefateludi/ToolLens-Agent-",
+		year: "2026",
 	},
 	{
-		key: "kernelpatch",
-		title: "KernelPatch",
-		summary:
-			"A kernel patch framework that powers APatch-style root on Android by loading code into the running kernel.",
-		category: "android",
-		phase: "shipped",
-		technologies: ["C", "Linux Kernel", "Android"],
-		icon: "material-symbols:extension-outline-rounded",
-		repository: "https://github.com/lyravoid/KernelPatch",
+		key: "momo-techscout",
+		title: "MOMO TechScout",
+		summary: "一个可追溯的论文调研 Agent：检索、筛选到结论，全程保留证据链。",
+		category: "agent",
+		phase: "building",
+		technologies: ["Python", "TypeScript"],
+		icon: "material-symbols:travel-explore-rounded",
+		repository: "https://github.com/bluefateludi/MOMO-TechScout",
+		year: "2026",
 	},
 ];
 
